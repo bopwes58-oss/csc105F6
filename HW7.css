@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.todo-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#addTaskBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+#addTaskBtn:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.button-group {
+  display: flex;
+  gap: 6px;
+}
+
+.complete-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.complete-btn:hover {
+  background-color: #218838;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
